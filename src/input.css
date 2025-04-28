@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+.property-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-top: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.property-item:hover {
+    background-color: #f9f9f9;
+}
+
+.grid-icon {
+    color: #888;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.property-item span {
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#addProperty{
+    width: 280px;
+    padding: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    left: 20px;
+
+}

@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Defect Management</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./src/input.css">
+</head>
+<body class=" bg-amber-100 font-sans p-6 relative ">
+    <div class=" w-[800px]  mx-auto bg-white p-6 rounded-xl" id="defectPopup">
+        <!-- Header -->
+        <div class="text-gray-500 text-sm mb-4">
+            User / QA ID-1234
+        </div>
+
+        <!-- Defect Name Input -->
+        <div class="mb-4">
+            <input type="text" placeholder="Enter a Defect Name here" class="w-full text-3xl font-light text-gray-300 focus:outline-none focus:text-gray-700 pb-2">
+        </div>
+
+        <!-- Properties Grid -->
+        <div class="flex flex-col gap-y-8 mb-8 ">
+            <div class="row-1 flex justify-between gap-16 ">
+                    <!-- Priority -->
+            <div class="flex flex-auto justify-between items-center align-middle ">
+                <div class="content flex items-center align-middle ">
+                    <div class="w-8 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                        </svg>
+                    </div>
+                    <div class="w-24 text-gray-500">Priority</div>
+                </div>
+               
+                <div class="flex ">
+                    <div class="bg-red-400 text-white text-center py-1 px-4 rounded-full w-24">High</div>
+                </div>
+            </div>
+
+            <!-- Status -->
+            <div class="flex flex-auto justify-between items-center ">
+                <div class="content-02 flex items-center align-middle ">
+                    <div class="w-8 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div class="w-24 text-gray-500">Status</div>
+                </div>
+                
+                <div class="flex">
+                    <div class="bg-green-500 text-white text-center py-1 px-4 rounded-full w-28">Completed</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row-2 flex justify-between gap-16">
+                <!-- Assigned to -->
+            <div class="flex flex-auto justify-between items-center align-middle ">
+            <div class="content flex items-center align-middle ">
+                <div class="w-8 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>
+                </div>
+                <div class="w-24 text-gray-500">Assigned to</div>
+            </div>
+           
+            <div class=" flex items-center">
+                <div class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 mr-2">H</div>
+                <span>Harishk0</span>
+            </div>
+            </div>
+
+        <!-- Due Date -->
+            <div class="flex flex-auto justify-between items-center ">
+            <div class="content-02 flex items-center align-middle ">
+                <div class="w-8 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                    </svg>
+                </div>
+                <div class="w-24 text-gray-500">Due Date</div>
+            </div>
+            
+            <div class="flex">March 24th 2023</div>
+            </div>
+            </div>
+
+            <div class="row-3 flex justify-between gap-16 ">
+                <!-- Release -->
+        <div class="flex flex-auto justify-between items-center align-middle">
+            <div class="content flex items-center align-middle ">
+                <div class="w-8 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                    </svg>
+                </div>
+                <div class="w-24 text-gray-500">Release</div>
+            </div>
+            <div class="flex">REL.apk0200</div>
+           
+        </div>
+
+        <!-- sprint -->
+        <div class="flex flex-auto justify-between items-center">
+            <div class="content-02 flex items-center align-middle ">
+                <div class="w-8 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                    </svg>
+                </div>
+                <div class="w-24 text-gray-500">Sprint</div>
+            </div>
+            
+            <div class="flex">Sprint02</div>
+        </div>
+            </div>
+        
+           
+        </div>
+
+        <!-- Add Property Button -->
+        <div class="mb-4">
+            <button class="text-red-600 flex items-center" onclick="popup()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+                Add Property
+            </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-200 my-6"></div>
+
+        <!-- Attachments Section -->
+        <div class="mb-6">
+            <h3 class="font-medium mb-4">Attachments</h3>
+            
+            <div class="flex items-center mb-3">
+                <div class="w-8 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                    </svg>
+                </div>
+                <div class="text-blue-500">Insert Links</div>
+            </div>
+            
+            <div class="flex items-center">
+                <div class="w-8 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </div>
+                <div>Add Attachment <span class="text-gray-400 text-sm">(Max 20mb)</span></div>
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="mb-6">
+            <h3 class="font-medium mb-4">Description</h3>
+            <textarea class="w-full border border-gray-200 rounded-lg p-4 h-32 focus:outline-none focus:ring-2 focus:ring-gray-200"></textarea>
+        </div>
+
+        <!-- Add Comments Section -->
+        <div class="bg-gray-50 p-4 rounded-lg flex items-center mb-8">
+            <div class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 mr-3">H</div>
+            <div class="text-gray-500">Add Comments</div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-end space-x-4">
+            <button class="border border-red-600 text-red-600 px-8 py-2 rounded-lg">Cancel</button>
+            <button class="bg-red-600 text-white px-8 py-2 rounded-lg">Save</button>
+        </div>
+    </div>
+    <div class=" bg-white rounded-lg shadow-lg overflow-hidden h-auto " id="addProperty">
+        <!-- Search Input -->
+        <div class="p-3">
+            <input 
+                type="text" 
+                placeholder="Search / add new property" 
+                class="w-full border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-gray-300"
+                style="padding: 10px;"
+            >
+        </div>
+        
+        <!-- Property List -->
+        <div class="max-h-[500px] overflow-y-auto overflow-x-hidden">
+            <!-- Property Items -->
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Module</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Label</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>User story</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Test cases</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Team</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Severity</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Client</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Environment type</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Execution type</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Start date</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>End date</span>
+            </div>
+            
+            <div class="property-item">
+                <div class="grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="7" cy="7" r="1"></circle>
+                        <circle cx="7" cy="12" r="1"></circle>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="12" cy="7" r="1"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="17" r="1"></circle>
+                        <circle cx="17" cy="7" r="1"></circle>
+                        <circle cx="17" cy="12" r="1"></circle>
+                        <circle cx="17" cy="17" r="1"></circle>
+                    </svg>
+                </div>
+                <span>Efforts</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let property= document.getElementById("addProperty")
+        let defectPop = document.getElementById("defectPopup")
+
+        function popup(){
+            property.style.display="block"
+        }
+    </script>
+</body>
+</html>
